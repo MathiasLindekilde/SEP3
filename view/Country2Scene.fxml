@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Country2Controller">
+    <children>
+        <HBox prefHeight="45.0" prefWidth="1000.0" style="-fx-background-color: #b8b8b8;">
+            <children>
+                <Label alignment="CENTER" prefHeight="45.0" prefWidth="209.0" text="MACS Framework">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <VBox layoutY="45.0" prefHeight="705.0" prefWidth="208.0" style="-fx-background-color: lightgrey;">
+            <children>
+                <Label alignment="BOTTOM_CENTER" prefHeight="49.0" prefWidth="208.0" text="Welcome,">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Label fx:id="nameLabel" alignment="CENTER" prefHeight="30.0" prefWidth="208.0" text="name">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="100.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="47.0" prefWidth="208.0">
+                    <children>
+                        <ImageView fx:id="myImageViewHome" fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/data-management.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="40.0" top="7.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="homeButton" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="45.0" prefWidth="123.0" style="-fx-border-color: none; -fx-border-width: none; -fx-background-color: none; -fx-alignment: CENTER_LEFT;" text="DASHBOARD">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                    <effect>
+                        <ColorAdjust saturation="-1.0" />
+                    </effect>
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox prefHeight="47.0" prefWidth="208.0">
+                    <children>
+                        <ImageView fx:id="myImageViewCriteria" fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/checklist.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="40.0" top="7.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="setCriteria" mnemonicParsing="false" onAction="#handleSetCriteria" prefHeight="45.0" prefWidth="123.0" style="-fx-border-color: none; -fx-border-width: none; -fx-background-color: none; -fx-alignment: CENTER_LEFT;" text="SET CRITERIA">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                    </children>
+                    <effect>
+                        <ColorAdjust saturation="-1.0" />
+                    </effect>
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox prefHeight="47.0" prefWidth="208.0">
+                    <children>
+                        <ImageView fx:id="myImageViewCountry1" fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/coronavirus.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="40.0" top="7.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="country1Button" mnemonicParsing="false" onAction="#handleCountry1" prefHeight="45.0" prefWidth="123.0" style="-fx-border-color: none; -fx-border-width: none; -fx-background-color: none; -fx-alignment: CENTER_LEFT;" text="COUNTRY 1">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+               <effect>
+                  <ColorAdjust saturation="-1.0" />
+               </effect>
+                </HBox>
+                <HBox prefHeight="47.0" prefWidth="208.0">
+                    <children>
+                        <ImageView fx:id="myImageViewCountry2" fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/coronavirus.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="40.0" top="7.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="country2Button" mnemonicParsing="false" prefHeight="45.0" prefWidth="123.0" style="-fx-border-color: none; -fx-border-width: none; -fx-background-color: none; -fx-alignment: CENTER_LEFT;" text="COUNTRY 2">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="15.0" />
+                    </VBox.margin>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </HBox>
+                <HBox prefHeight="47.0" prefWidth="208.0">
+                    <children>
+                        <ImageView fx:id="myImageViewCountry3" fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/coronavirus.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="40.0" top="7.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="country3Button" mnemonicParsing="false" onAction="#handleCountry3" prefHeight="45.0" prefWidth="123.0" style="-fx-border-color: none; -fx-border-width: none; -fx-background-color: none; -fx-alignment: CENTER_LEFT;" text="COUNTRY 3">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></Button>
+                    </children>
+                    <effect>
+                        <ColorAdjust saturation="-1.0" />
+                    </effect>
+                </HBox>
+                <Button fx:id="logoffButton" mnemonicParsing="false" onAction="#handleLogoff" prefHeight="48.0" prefWidth="208.0" text="LOGOFF">
+                    <VBox.margin>
+                        <Insets top="175.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <HBox layoutX="208.0" layoutY="129.0" prefHeight="49.0" prefWidth="792.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="310.0" text="Market Attractiveness - Criteria">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Weight">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Fact">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Points">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Weighted Points">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="184.0" prefHeight="63.0" prefWidth="792.0" style="-fx-border-color: grey;">
+            <children>
+                <TextArea fx:id="criteriaAreaMarket1" editable="false" prefHeight="200.0" prefWidth="310.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextArea>
+                <TextField fx:id="weightFieldMarket1" alignment="CENTER" editable="false" prefHeight="68.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin></TextField>
+                <TextField fx:id="factFieldMarket1" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" />
+                <ChoiceBox fx:id="pointsBoxMarket1" prefHeight="68.0" prefWidth="100.0" />
+                <Label fx:id="weightedPointsLabelMarket1" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" text="0.00" />
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="251.0" prefHeight="63.0" prefWidth="792.0" style="-fx-border-color: grey;">
+            <children>
+                <TextArea fx:id="criteriaAreaMarket2" editable="false" prefHeight="200.0" prefWidth="310.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextArea>
+                <TextField fx:id="weightFieldMarket2" alignment="CENTER" editable="false" prefHeight="68.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin></TextField>
+                <TextField fx:id="factFieldMarket2" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" />
+                <ChoiceBox fx:id="pointsBoxMarket2" prefHeight="68.0" prefWidth="100.0" />
+                <Label fx:id="weightedPointsLabelMarket2" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" text="0.00" />
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="318.0" prefHeight="63.0" prefWidth="792.0" style="-fx-border-color: grey;">
+            <children>
+                <TextArea fx:id="criteriaAreaMarket3" editable="false" prefHeight="200.0" prefWidth="310.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextArea>
+                <TextField fx:id="weightFieldMarket3" alignment="CENTER" editable="false" prefHeight="68.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin></TextField>
+                <TextField fx:id="factFieldMarket3" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" />
+                <ChoiceBox fx:id="pointsBoxMarket3" prefHeight="68.0" prefWidth="100.0" />
+                <Label fx:id="weightedPointsLabelMarket3" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" text="0.00" />
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="412.0" prefHeight="49.0" prefWidth="792.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="310.0" text="Competitive Strength - Criteria">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Weight">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Fact">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Points">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="49.0" prefWidth="100.0" text="Weighted Points">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="461.0" prefHeight="63.0" prefWidth="792.0" style="-fx-border-color: grey;">
+            <children>
+                <TextArea fx:id="criteriaAreaComp1" editable="false" prefHeight="200.0" prefWidth="310.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextArea>
+                <TextField fx:id="weightFieldComp1" alignment="CENTER" editable="false" prefHeight="68.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin></TextField>
+                <TextField fx:id="factFieldComp1" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" />
+                <ChoiceBox fx:id="pointsBoxComp1" prefHeight="68.0" prefWidth="100.0" />
+                <Label fx:id="weightedPointsLabelComp1" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" text="0.00" />
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="528.0" prefHeight="63.0" prefWidth="792.0" style="-fx-border-color: grey;">
+            <children>
+                <TextArea fx:id="criteriaAreaComp2" editable="false" prefHeight="200.0" prefWidth="310.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextArea>
+                <TextField fx:id="weightFieldComp2" alignment="CENTER" editable="false" prefHeight="68.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin></TextField>
+                <TextField fx:id="factFieldComp2" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" />
+                <ChoiceBox fx:id="pointsBoxComp2" prefHeight="68.0" prefWidth="100.0" />
+                <Label fx:id="weightedPointsLabelComp2" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" text="0.00" />
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="595.0" prefHeight="63.0" prefWidth="792.0" style="-fx-border-color: grey;">
+            <children>
+                <TextArea fx:id="criteriaAreaComp3" editable="false" prefHeight="200.0" prefWidth="310.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextArea>
+                <TextField fx:id="weightFieldComp3" alignment="CENTER" editable="false" prefHeight="68.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="65.0" />
+               </HBox.margin></TextField>
+                <TextField fx:id="factFieldComp3" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" />
+                <ChoiceBox fx:id="pointsBoxComp3" prefHeight="68.0" prefWidth="100.0" />
+                <Label fx:id="weightedPointsLabelComp3" alignment="CENTER" prefHeight="68.0" prefWidth="100.0" text="0.00" />
+            </children>
+        </HBox>
+        <Button fx:id="saveAllButton" layoutX="540.0" layoutY="686.0" mnemonicParsing="false" onAction="#handleSaveFactors" prefHeight="50.0" prefWidth="90.0" text="Save" />
+        <HBox layoutX="208.0" layoutY="381.0" prefHeight="27.0" prefWidth="792.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="180.0" text="Total weighted market points:">
+                    <HBox.margin>
+                        <Insets left="505.0" />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="totWeightedMarketPointsCountry2" alignment="CENTER" prefHeight="36.0" prefWidth="100.0" text="0.00">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutX="208.0" layoutY="658.0" prefHeight="27.0" prefWidth="792.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="180.0" text="Total weighted comp. points:">
+                    <HBox.margin>
+                        <Insets left="505.0" />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="totWeightedCompPointsCountry2" alignment="CENTER" prefHeight="36.0" prefWidth="100.0" text="0.00">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+      <TextField fx:id="countryNameField" layoutX="604.0" layoutY="76.0" prefHeight="37.0" prefWidth="180.0" promptText="Country name" AnchorPane.topAnchor="75.0" />
+      <Label alignment="CENTER" layoutX="424.0" layoutY="77.0" prefHeight="37.0" prefWidth="180.0" text="Enter country name:" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

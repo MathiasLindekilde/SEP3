@@ -1,0 +1,28 @@
+.button {
+-fx-focus-color: transparent;
+-fx-faint-focus-color: transparent;
+}
+
+.chart-bubble.default-color0 {
+ -fx-bubble-fill: green;
+}
+
+.chart-bubble.default-color1 {
+ -fx-bubble-fill: blue;
+}
+
+.chart-bubble.default-color2 {
+ -fx-bubble-fill: red;
+}
+
+.chart-bubble.default-color3 {
+ -fx-bubble-fill: green;
+}
+
+.chart-bubble.default-color4 {
+ -fx-bubble-fill: blue;
+}
+
+.chart-bubble.default-color5 {
+ -fx-bubble-fill: red;
+}
